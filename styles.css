@@ -1,144 +1,129 @@
+/* 🌸 SKINWISE — Estilo Elegante y Profesional */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
+
 :root {
-  --bg: #fdfaf9;
-  --card: #ffffff;
-  --accent: #e4a0a1;
-  --accent-dark: #d38183;
-  --secondary: #9ed2b6;
-  --text: #3b3b3b;
+  --primary: #e6b7b9;      /* Rosa palo elegante */
+  --primary-dark: #d49a9d;
+  --bg: #f8f8f8;           /* Gris perla */
+  --text: #2f2f2f;
   --muted: #777;
-  --radius: 14px;
-  --gap: 18px;
-  font-family: 'Poppins', 'Inter', system-ui, sans-serif;
+  --white: #ffffff;
+  --radius: 12px;
 }
+
 body {
-  background: linear-gradient(180deg, var(--bg), #ffffff);
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
   color: var(--text);
-  line-height: 1.6;
-}
-.container {max-width: 960px; margin: 30px auto; padding: 0 16px;}
-.site-header {text-align: center; padding: 40px 0 10px;}
-.site-header h1 {font-size: 2rem; color: var(--accent-dark); margin-bottom: 8px;}
-.card {background: var(--card); padding: 24px; border-radius: var(--radius);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.04); margin-bottom: 24px;}
-.btn-primary {background: var(--accent); color: white; padding: 10px 18px;
-  border-radius: 10px; border: none; cursor: pointer; font-weight: 600;}
-/* --- Sección SOBRE MÍ --- */
-#about {
-  background: #fff8f8;
-  border: 1px solid #f3d0d0;
+  line-height: 1.7;
+  margin: 0;
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
+/* --- Encabezado --- */
+.site-header {
   text-align: center;
+  padding: 60px 20px 30px;
+  background-color: var(--white);
+  border-bottom: 1px solid #eee;
+}
+.site-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+}
+.tagline {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-.about-photo {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent);
+/* --- Contenedor principal --- */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (min-width: 700px) {
-  .about-content {
-    flex-direction: row;
-    text-align: left;
-  }
-  .about-photo {
-    width: 140px;
-    height: 140px;
-  }
+/* --- Tarjetas --- */
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  padding: 32px;
+  margin-bottom: 28px;
 }
-/* --- Sección SOBRE MÍ (versión elegante) --- */
+
+/* --- Botones --- */
+.btn-primary {
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--primary-dark);
+  border: 1px solid var(--primary);
+  padding: 10px 22px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-ghost:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* --- Sección Sobre mí --- */
 #about {
-  background: #fffafc;
-  border: 1px solid #f4d6d8;
-  padding: 40px 24px;
+  background: #fffdfd;
+  border: 1px solid #f2d4d6;
 }
-
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: center;
   text-align: justify;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #3c3b3b;
 }
-
 .about-photo {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--accent);
+  border: 3px solid var(--primary);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
 #about h2 {
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-dark);
   font-size: 1.6rem;
-  color: var(--accent-dark);
   margin-bottom: 20px;
 }
 
-@media (min-width: 700px) {
-  .about-content {
-    flex-direction: row;
-    text-align: left;
-  }
-  .about-photo {
-    width: 150px;
-    height: 150px;
-  }
-}/* --- Sección SOBRE MÍ (versión elegante) --- */
-#about {
-  background: #fffafc;
-  border: 1px solid #f4d6d8;
-  padding: 40px 24px;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  text-align: justify;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #3c3b3b;
-}
-
-.about-photo {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--accent);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-#about h2 {
+/* --- Footer --- */
+.footer {
   text-align: center;
-  font-size: 1.6rem;
-  color: var(--accent-dark);
-  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-top: 1px solid #eee;
 }
 
+/* --- Responsive --- */
 @media (min-width: 700px) {
   .about-content {
     flex-direction: row;
+    align-items: center;
     text-align: left;
   }
-  .about-photo {
-    width: 150px;
-    height: 150px;
-  }
 }
-
