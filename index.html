@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SkinWise — Consejos de cuidado de la piel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>SkinWise</h1>
+      <p class="tagline">Rutinas y productos personalizados según tu tipo de piel</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="wizard" class="card">
+      <h2>Cuéntame sobre tu piel</h2>
+      <form id="skin-form">
+        <div class="form-row">
+          <label for="skin-type">Tipo de piel</label>
+          <select id="skin-type" required>
+            <option value="">— Selecciona —</option>
+            <option value="normal">Normal</option>
+            <option value="seca">Seca</option>
+            <option value="mixta">Mixta</option>
+            <option value="grasa">Grasa</option>
+            <option value="sensible">Sensible</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>Preocupaciones (puedes elegir varias)</label>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" name="concern" value="acne"> Acné</label>
+            <label><input type="checkbox" name="concern" value="manchas"> Manchas/hiperpigmentación</label>
+            <label><input type="checkbox" name="concern" value="lineas"> Líneas de expresión</label>
+            <label><input type="checkbox" name="concern" value="poros"> Poros visibles</label>
+            <label><input type="checkbox" name="concern" value="deshidratacion"> Deshidratación</label>
+            <label><input type="checkbox" name="concern" value="sensibilidad"> Sensibilidad/rojeces</label>
+          </div>
+        </div>
+
+        <div class="form-row actions">
+          <button type="submit" class="btn-primary">Ver rutina y productos</button>
+          <button type="button" id="reset" class="btn-ghost">Reiniciar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="results" class="card hidden">
+      <h2>Tu rutina recomendada</h2>
+      <div id="routines" class="grid"></div>
+
+      <h3>Productos recomendados</h3>
+      <div id="products" class="grid"></div>
+
+      <div class="note">
+        <strong>Nota:</strong> Esta guía es informativa y no sustituye la consulta con un profesional.
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="currentYear"></span> SkinWise — Hecho con ♥</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
