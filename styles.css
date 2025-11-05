@@ -158,14 +158,23 @@ body {
   align-items: center;
   text-align: justify;
 }
-.about-photo {
-  width: 130px;
-  height: 130px;
+..about-photo {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--primary);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, #f8e3e4 0%, #fceaea 100%);
+  padding: 8px;
+  border: 1px solid #f4c7c9;
+  box-shadow: 0 8px 20px rgba(230, 183, 185, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.about-photo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(230, 183, 185, 0.4);
+}
+
 #about h2 {
   text-align: center;
   font-family: 'Playfair Display', serif;
