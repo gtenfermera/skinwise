@@ -276,4 +276,199 @@ body {
   color: #d36d83;
   margin-bottom: 10px;
 }
+/* -------------------------
+   ESTILOS GENERALES SKINWISE
+-------------------------- */
+body {
+  font-family: "Poppins", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8fa;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ENCABEZADO */
+.site-header {
+  text-align: center;
+  background-color: #fce4ec;
+  color: #b3546a;
+  padding: 50px 20px 40px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.site-header p {
+  font-size: 1.2em;
+  color: #a34e64;
+  margin-top: 10px;
+}
+
+/* SELECTOR DE IDIOMA */
+.language-switcher {
+  text-align: right;
+  padding: 10px 20px;
+  background: #fff0f4;
+}
+
+.language-switcher button {
+  background: #f8e6ea;
+  border: 1px solid #f3c9cc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background: #f3c9cc;
+}
+
+/* IMAGEN DE PORTADA */
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #f8cdd3;
+}
+
+/* TARJETAS GENERALES */
+.card {
+  background: #fff;
+  margin: 40px auto;
+  padding: 30px 25px;
+  max-width: 900px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #f3d4d8;
+}
+
+.card h2 {
+  text-align: center;
+  color: #c46b84;
+  margin-bottom: 25px;
+}
+
+/* SOBRE MÍ */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #f9dce2;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* CONSEJOS SEGÚN TIPO DE PIEL */
+.tip {
+  margin-bottom: 20px;
+  padding: 18px;
+  background: #fff8fa;
+  border: 1px solid #f7cdd2;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tip:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.tip h3 {
+  color: #d36d83;
+  margin-bottom: 8px;
+}
+
+/* BLOQUES DE ARTÍCULOS */
+#articles {
+  background: #fffafc;
+  border: 1px solid #f3d4d8;
+  border-radius: 16px;
+  padding: 40px 20px;
+}
+
+.article-block {
+  background: #fff;
+  border: 1px solid #f4c7c9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.article-block h3 {
+  color: #d36d83;
+  margin-bottom: 10px;
+}
+
+/* CONTACTO */
+#contact {
+  background: #fff8fa;
+  border: 1px solid #f3c9cc;
+  text-align: center;
+  padding: 30px;
+}
+
+#contact a {
+  color: #c46b84;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* PIE DE PÁGINA */
+footer {
+  text-align: center;
+  background-color: #fce4ec;
+  color: #a34e64;
+  padding: 20px 0;
+  font-size: 0.9em;
+  margin-top: 40px;
+  border-top: 2px solid #f8cdd3;
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .site-header h1 {
+    font-size: 2em;
+  }
+
+  .card {
+    margin: 25px 15px;
+    padding: 25px 20px;
+  }
+}
 
