@@ -1,7 +1,60 @@
 /* 🌸 SKINWISE — Estilo Elegante y Profesional */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
-:root {
+:root {/* --- Navegación elegante --- */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-dark);
+}
+
+/* Responsive menú móvil */
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+}
+
   --primary: #e6b7b9;      /* Rosa palo elegante */
   --primary-dark: #d49a9d;
   --bg: #f8f8f8;           /* Gris perla */
