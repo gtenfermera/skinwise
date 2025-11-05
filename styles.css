@@ -28,7 +28,18 @@
   letter-spacing: 0.5px;
 }
 
-.nav-links {
+.nav-links {/* --- Colores especiales del menú --- */
+.nav-links a[href="#about"],
+.nav-links a[href="#contact"] {
+  color: #6a8caf; /* Azul elegante */
+  font-weight: 600;
+}
+
+.nav-links a[href="#about"]:hover,
+.nav-links a[href="#contact"]:hover {
+  color: var(--primary-dark); /* Rosa palo al pasar el cursor */
+}
+
   list-style: none;
   display: flex;
   gap: 24px;
